@@ -14,49 +14,49 @@ body {
     height: 98vh;
     padding-bottom: 2vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr ;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas:
-     /*row 1  */
-    "header header header header header header header header header header header header header header header header"
-    /*row 2  */
-    "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
-    /*row 3  */
-    "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
-    /*row 4  */
-   "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
-    /*row 5  */
-    "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
-    /*row 6  */
-    "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
-    /* row 7 */
-    "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
-    /* row 8 */
-    "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
-    /* row 9 */
-    "footer1 footer1 footer1 footer1 accessHolder accessHolder  accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder footer2 footer2 footer2 footer2 ";
+        /*row 1  */
+        "header header header header header header header header header header header header header header header header"
+        /*row 2  */
+        "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
+        /*row 3  */
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        /*row 4  */
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        /*row 5  */
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        /*row 6  */
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        /* row 7 */
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        /* row 8 */
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        /* row 9 */
+        "footer1 footer1 footer1 footer1 accessHolder accessHolder  accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder footer2 footer2 footer2 footer2 ";
 }
 
-header{
+header {
     grid-area: header;
 }
 
-.navigation{
+.navigation {
     grid-area: navigation;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30%;
 }
 
-.nav li{
-    
+.nav li {
+
     list-style: none;
 }
 
-.nav li a{
+.nav li a {
     font-family: Forum;
     font-size: 1.2rem;
     color: rgb(51, 50, 50);
@@ -65,21 +65,21 @@ header{
     transition-duration: 500;
 }
 
-.nav li a:hover{
+.nav li a:hover {
     color: rgb(80, 00, 00);
 }
 
-.sideBar{
+.sideBar {
     grid-area: sideBar;
     display: flex;
     flex-direction: column;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     overflow-x: scroll;
-    
+
 }
 
-.sideBar a{
+.sideBar a {
     font-family: josefin sans;
     font-size: 0.8rem;
     color: rgb(51, 50, 50);
@@ -89,21 +89,21 @@ header{
     transition-duration: 500;
 }
 
-.sideBar a:hover{
+.sideBar a:hover {
     color: rgb(80, 00, 00);
 }
 
-.mainPhoto{
+.mainPhoto {
     grid-area: mainPhoto;
 }
 
-.mainPhoto img{
+.mainPhoto img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.addContainer{
+.addContainer {
     grid-area: addContainer;
     display: flex;
     flex-direction: column;
@@ -111,18 +111,20 @@ header{
     align-items: center;
 }
 
-.addHolder{
+.addHolder {
     border: 1px solid rgb(51, 50, 50);
-    width: 62.5%;
-    height: 16.66%;
+    width: 300px;
+    height: 120px;
+    /* width: 62.5%;
+    height: 16.66%; */
     padding: 0 0.5rem;
     display: flex;
     align-items: center;
-   
-   
+
+
 }
 
-.addTxt{
+.addTxt {
     font-family: josefin sans;
     font-size: 0.8rem;
     color: rgb(51, 50, 50);
@@ -132,79 +134,137 @@ header{
     line-height: 1.5;
 }
 
-.addHolder a:hover{
+.addHolder a:hover {
     color: maroon;
 }
 
-.footer1{
+.footer1 {
     grid-area: footer1;
     display: flex;
     align-items: last baseline;
-    padding:0 0.5rem;
+    padding: 0 0.5rem;
 }
 
-.accessHolder{
+.accessHolder {
     grid-area: accessHolder;
     display: flex;
-   padding-top: 1rem;
-   padding-left: 4rem;
-   padding-right: 2rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
 }
 
-.access{
+.access {
     font-family: josefin sans;
     font-size: 0.8rem;
     text-decoration: none;
     color: rgb(51, 50, 50);
     line-height: 1.5;
 }
-.footer2{
+
+.footer2 {
     grid-area: footer2;
 }
 
-@media only screen and (max-width: 1560px){
-    .container{
+@media only screen and (max-width: 1560px) {
+    .container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         /* height: auto; */
         /* padding: 0 2vw; */
-        grid-template-areas: 
-        "header header header header header header header header header header header header header"
-        "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
-       "addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer"
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-        "footer1 footer1 footer1 footer1 accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder footer2";
+        grid-template-areas:
+            "header header header header header header header header header header header header header"
+            "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
+            "addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer"
+            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
+            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
+            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
+            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
+            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
+            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
+            "footer1 footer1 footer1 footer1 accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder footer2";
     }
 
-    .nav{
+    .nav {
         padding: 0;
         justify-content: space-around;
+    }
+
+    .addContainer {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .addHolder {
+        /* height: 100%;
+        width: 19.23%; */
+        height: 120px;
+        width: 300px;
+    }
+
+    .mainPhoto {
+        padding-right: 1.5rem;
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        height: auto;
+        /* padding: 0 2vw; */
+        grid-template-areas:
+            "header header"
+            "navigation navigation"
+            "addContainer addContainer"
+            "sideBar sideBar"
+            "mainPhoto mainPhoto"
+            "accessHolder accessHolder"
+            "footer1 footer1";
+    }
+
+
+   .nav li a {
+        line-height: 2;
     }
 
     .addContainer{
         flex-direction: row;
         justify-content: space-around;
-        margin-bottom: 1rem;
+        height: 100%;
+        flex-wrap: wrap;
     }
 
     .addHolder{
-        height: 100%;
-        width: 19.23%;
+        height: 120px;
+        width: 300px
     }
 
-    .mainPhoto{
-        padding-right: 1.5rem;
+    .sideBar{
+        padding-left: 0.5rem;
+    }
+
+    .sideBar a{
+        line-height: 3;
+    }
+
+    .accessHolder{
         padding-left: 1rem;
+        padding-right: 1.5rem;
+        justify-content: center;
+    }
+    
+    .access{
+        text-align: justify;
     }
 
- 
+    .footer1{
+        justify-content: center;
+    }
 
- }
-    
-
-
+    .footer2 {
+        display: none;
+    }
+}
