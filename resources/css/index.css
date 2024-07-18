@@ -21,17 +21,17 @@ body {
         /*row 2  */
         "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
         /*row 3  */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer1 addContainer1 addContainer1 addContainer1"
         /*row 4  */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer1 addContainer1 addContainer1 addContainer1"
         /*row 5  */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer1 addContainer1 addContainer1 addContainer1"
         /*row 6  */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer2 addContainer2 addContainer2 addContainer2"
         /* row 7 */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer2 addContainer2 addContainer2 addContainer2"
         /* row 8 */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer addContainer addContainer addContainer"
+        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer2 addContainer2 addContainer2 addContainer2"
         /* row 9 */
         "footer1 footer1 footer1 footer1 accessHolder accessHolder  accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder footer2 footer2 footer2 footer2 ";
 }
@@ -94,6 +94,8 @@ header {
 }
 
 .mainPhoto {
+    display: flex;
+    align-items:flex-start;
     grid-area: mainPhoto;
 }
 
@@ -103,12 +105,22 @@ header {
     object-fit: contain;
 }
 
-.addContainer {
-    grid-area: addContainer;
+.addContainer1 {
+    grid-area: addContainer1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    border: 1px solid orange;
+}
+
+.addContainer2 {
+    grid-area: addContainer2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
 }
 
 .addHolder {
@@ -166,21 +178,28 @@ header {
 }
 
 @media only screen and (max-width: 1560px) {
+    body{
+        height: auto;
+    }
+
     .container {
+        height: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         /* height: auto; */
         /* padding: 0 2vw; */
         grid-template-areas:
             "header header header header header header header header header header header header header"
             "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
-            "addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer addContainer"
+            "addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1"
+             "addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2"
             "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
             "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
             "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
             "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
             "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
             "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
+            
             "footer1 footer1 footer1 footer1 accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder footer2";
     }
 
@@ -189,11 +208,14 @@ header {
         justify-content: space-around;
     }
 
-    .addContainer {
+    .addContainer1 {
         flex-direction: row;
         justify-content: space-around;
         margin-bottom: 1rem;
-        flex-wrap: wrap;
+    }
+
+    .sideBar a{
+        padding-bottom: 1rem;
     }
 
     .addHolder {
@@ -207,9 +229,19 @@ header {
         padding-right: 1.5rem;
         padding-left: 1rem;
     }
+
+    .mainPhoto img{
+        object-fit: cover;
+    }
+
+    .addContainer2 {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     .container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto auto auto auto auto;
@@ -218,7 +250,8 @@ header {
         grid-template-areas:
             "header header"
             "navigation navigation"
-            "addContainer addContainer"
+            "addContainer1 addContainer1"
+            "addContainer2 addContainer2"
             "sideBar sideBar"
             "mainPhoto mainPhoto"
             "accessHolder accessHolder"
@@ -230,14 +263,26 @@ header {
         line-height: 2;
     }
 
-    .addContainer{
+    .addContainer1{
         flex-direction: row;
         justify-content: space-around;
-        height: 100%;
-        flex-wrap: wrap;
+        padding-right: 1rem;
+        padding-left: 0.5rem;
+        flex-direction: column;
+        justify-items: center;
     }
 
+    .addContainer2{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right: 1rem;
+        padding-left: 0.5rem;
+        flex-direction: column;
+        justify-items: center;
+     }
+
     .addHolder{
+        margin-bottom: 0.5rem;
         height: 120px;
         width: 300px
     }
