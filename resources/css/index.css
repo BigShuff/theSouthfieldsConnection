@@ -343,4 +343,10 @@ header {
 .nav{
    flex-direction: column;
 }
+
+.addContainer1{
+    justify-content: center;
+}
+
+
 }
