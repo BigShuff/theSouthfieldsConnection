@@ -201,6 +201,8 @@ header {
             "footer1 footer1 footer1 footer1 accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder footer2";
     }
 
+  
+
     .nav {
         padding: 0;
         justify-content: space-around;
@@ -260,6 +262,10 @@ header {
     header{
         display: flex;
         justify-content: center;
+    }
+
+    header img{
+        width: 380px;
     }
 
    .nav li a {
