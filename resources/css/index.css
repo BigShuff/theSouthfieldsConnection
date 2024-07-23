@@ -3,52 +3,48 @@ body {
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: 100%;
     font-family: "Forum", serif;
 }
 
 .container {
     display: grid;
-    width: 100vw;
-    height: 98vh;
-    padding-bottom: 2vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-areas:
-        /*row 1  */
-        "header header header header header header header header header header header header header header header header"
-        /*row 2  */
-        "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
-        /*row 3  */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer1 addContainer1 addContainer1 addContainer1"
-        /*row 4  */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer1 addContainer1 addContainer1 addContainer1"
-        /*row 5  */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer1 addContainer1 addContainer1 addContainer1"
-        /*row 6  */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer2 addContainer2 addContainer2 addContainer2"
-        /* row 7 */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer2 addContainer2 addContainer2 addContainer2"
-        /* row 8 */
-        "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto addContainer2 addContainer2 addContainer2 addContainer2"
-        /* row 9 */
-        "footer1 footer1 footer1 footer1 accessHolder accessHolder  accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder footer2 footer2 footer2 footer2 ";
+    width: 100%;
+    height: auto;
+    grid-template-columns: 18% 82%;
+    grid-template-rows: 0.6fr 0.9fr 3fr 1fr;
 }
 
 header {
-    grid-area: header;
+    /* border: 1px solid red; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+header img {
+    min-width: 30%;
 }
 
 .navigation {
-    grid-area: navigation;
+    /* border: 1px solid red; */
+    /* grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3; */
+
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 30%;
+    justify-content: space-around;
+    padding-left: 0;
+    margin: 0 0;
 }
 
 .nav li {
@@ -56,297 +52,141 @@ header {
     list-style: none;
 }
 
-.nav li a {
-    font-family: Forum;
+.link{
+    text-decoration: none;
+}
+
+.navTxt{
     font-size: 1.2rem;
     color: rgb(51, 50, 50);
-    text-decoration: none;
     transition-property: color;
     transition-duration: 500;
+
 }
 
-.nav li a:hover {
-    color: rgb(80, 00, 00);
+.navTxt:hover {
+    color: rgb(182, 3, 3);
 }
 
-.sideBar {
-    grid-area: sideBar;
+.addContainer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
     display: flex;
-    flex-direction: column;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    overflow-x: scroll;
-
-}
-
-.sideBar a {
-    font-family: josefin sans;
-    font-size: 0.8rem;
-    color: rgb(51, 50, 50);
-    text-decoration: none;
-    line-height: 2;
-    transition-property: color;
-    transition-duration: 500;
-}
-
-.sideBar a:hover {
-    color: rgb(80, 00, 00);
-}
-
-.mainPhoto {
-    display: flex;
-    align-items:flex-start;
-    grid-area: mainPhoto;
-}
-
-.mainPhoto img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.addContainer1 {
-    grid-area: addContainer1;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-}
-
-.addContainer2 {
-    grid-area: addContainer2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .addHolder {
-    border: 1px solid rgb(51, 50, 50);
-    width: 300px;
-    height: 120px;
-    /* width: 62.5%;
-    height: 16.66%; */
-    padding: 0 0.5rem;
+    border: 1px solid rgb(218, 218, 218);
+    width: 350px;
+    height: 125px;
+}
+
+.sideBar {
+    /* border: 1px solid red; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
 
 
 }
 
-.addTxt {
-    font-family: josefin sans;
-    font-size: 0.8rem;
-    color: rgb(51, 50, 50);
+.sideBar a{
     text-decoration: none;
+}
+
+.sideBar a h2{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: darkslategrey;
+    
+    padding-bottom: 1rem;
     transition-property: color;
     transition-duration: 500;
+}
+
+.sideBar a h2:hover {
+    color: rgb(182, 3, 3);
+}
+
+.paddlesContainer {
+    /* border: 1px solid red; */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   padding-right: 1rem;
+   gap: 0.5rem;
+}
+
+.paddles{
+    border: 1px solid rgb(218, 218, 218);
+    width: 20%;
+    height: auto;
+    padding: 0 0.5rem;
+    background-color: #b5147717;
+
+    
+}
+
+.paddles h2{
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    color:rgb(22, 37, 37)
+}
+
+.paddlesBody{
+    font-size: 1rem;
+    color:rgb(22, 37, 37);
     line-height: 1.5;
 }
 
-.addHolder a:hover {
-    color: maroon;
-}
-
-.footer1 {
-    grid-area: footer1;
+.footer {
+    /* border: 1px solid red; */
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
     display: flex;
     align-items: last baseline;
-    padding: 0 0.5rem;
+    padding-left: 0.5rem;
+
+
 }
 
 .accessHolder {
-    grid-area: accessHolder;
+    /* border: 1px solid red; */
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 0 2rem;
     display: flex;
-    padding-top: 1rem;
-    padding-left: 4rem;
-    padding-right: 2rem;
+    align-items: center;
 }
 
 .access {
-    font-family: josefin sans;
     font-size: 0.8rem;
     text-decoration: none;
     color: rgb(51, 50, 50);
     line-height: 1.5;
+    color: darkslategrey;
 }
 
-.footer2 {
-    grid-area: footer2;
-}
-
-@media only screen and (max-width: 1560px) {
-    body{
-        height: auto;
+/* @media only screen and(max-width: 1500px){
+    .addContainer{
+        flex-flow: row wrap;
     }
-
-    .container {
-        height: auto;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        /* height: auto; */
-        /* padding: 0 2vw; */
-        grid-template-areas:
-            "header header header header header header header header header header header header header"
-            "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
-            "addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1 addContainer1"
-             "addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2 addContainer2"
-            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-            "sideBar sideBar sideBar sideBar mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto mainPhoto"
-            
-            "footer1 footer1 footer1 footer1 accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder accessHolder footer2";
-    }
-
-  
-
-    .nav {
-        padding: 0;
-        justify-content: space-around;
-    }
-
-    .addContainer1 {
-        flex-direction: row;
-        justify-content: space-evenly;
-        /* margin-bottom: 1rem; */
-    }
-
-    .sideBar a{
-        padding-bottom: 1rem;
-    }
-
-    .addHolder {
-        /* height: 100%;
-        width: 19.23%; */
-        height: 120px;
-        width: 300px;
-        padding: 0 0.5rem;
-    }
-
-    .mainPhoto {
-        padding-right: 1.5rem;
-        padding-left: 1rem;
-    }
-
-    .mainPhoto img{
-        object-fit: cover;
-    }
-
-    .addContainer2 {
-        flex-direction: row;
-        justify-content: space-evenly;
-        /* margin-bottom: 1rem; */
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto;
-        height: auto;
-        /* padding: 0 2vw; */
-        grid-template-areas:
-            "header header"
-            "navigation navigation"
-            "addContainer1 addContainer1"
-            "addContainer2 addContainer2"
-            "sideBar sideBar"
-            "mainPhoto mainPhoto"
-            "accessHolder accessHolder"
-            "footer1 footer1";
-    }
-
-    header{
-        display: flex;
-        justify-content: center;
-    }
-
-    header img{
-        width: 380px;
-    }
-
-   .nav li a {
-        line-height: 2;
-    }
-
-    .addContainer1{
-        flex-direction: row;
-        justify-content: space-around;
-        padding-right: 1rem;
-        padding-left: 0.5rem;
-        flex-direction: column;
-        justify-items: center;
-    }
-
-    .addContainer2{
-        flex-direction: row;
-        justify-content: space-around;
-        padding-right: 1rem;
-        padding-left: 0.5rem;
-        flex-direction: column;
-        justify-items: center;
-     }
-
-    .addHolder{
-        margin: 0.5rem;
-        height: 120px;
-        width: 300px
-    }
-
-    .sideBar{
-        padding-left: 0.5rem;
-    }
-
-    .sideBar a{
-        line-height: 3;
-    }
-
-    .accessHolder{
-        padding-left: 1rem;
-        padding-right: 1.5rem;
-        justify-content: center;
-    }
-    
-    .access{
-        text-align: justify;
-    }
-
-    .footer1{
-        justify-content: center;
-    }
-
-    .footer2 {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto;
-        height: auto;
-        /* padding: 0 2vw; */
-        grid-template-areas:
-            "header header"
-            "navigation navigation"
-            "addContainer1 addContainer1"
-            "addContainer2 addContainer2"
-            "sideBar sideBar"
-            "mainPhoto mainPhoto"
-            "accessHolder accessHolder"
-            "footer1 footer1";
-    }
-
-.nav{
-   flex-direction: column;
-}
-
-.addContainer1{
-    justify-content: center;
-}
-
-
-}
+} */
