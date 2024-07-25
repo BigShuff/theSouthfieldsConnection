@@ -211,6 +211,7 @@ header img {
         grid-column-end: 2;
         display: flex;
         flex-direction: column;
+        padding-left: 5rem;
     }
 
     .paddlesContainer {
@@ -223,6 +224,7 @@ header img {
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .accessHolder {
@@ -241,5 +243,8 @@ header img {
         grid-row-end: 7;
         grid-column-start: 1;
         grid-column-end: 2;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
     }
 }
