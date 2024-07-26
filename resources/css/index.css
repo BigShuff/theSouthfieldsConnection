@@ -180,7 +180,7 @@ header img {
 @media only screen and (max-width: 1150px){
     .container{
         grid-template-columns: 22% 78%;
-        grid-template-rows: 0.6fr 0.9fr 3fr 0.4fr;
+        grid-template-rows: auto auto auto auto;
         }
 
         header {
@@ -204,7 +204,14 @@ header img {
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 3;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         flex-direction: row;
+      }
+
+      .sideBar a{
+        padding-right: 1rem;
       }
 
       .paddlesContainer {
