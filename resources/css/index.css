@@ -103,7 +103,7 @@ header img {
 .sideBar a h2 {
     font-size: 0.8rem;
     font-weight: 700;
-    color: darkslategrey;
+    color: rgb(51, 50, 50);
     padding-bottom: 1rem;
     transition-property: color;
     transition-duration: 500;
