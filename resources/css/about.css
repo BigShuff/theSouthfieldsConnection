@@ -7,82 +7,170 @@ body{
     width: 100%;
     font-family: "Forum", serif;
     display: grid;
-    grid-template-rows: 20% 50% auto;
+    grid-template-rows: 0.5fr 1fr auto auto;
     grid-template-columns: 1fr;
  
 }
 
-
-
-header{
+.backBtnTop{
     grid-row-start: 1;
     grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: #b5147717;
+    padding-top: 1rem;
+}
+
+.backBtn a {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(51, 50, 50);
+    text-decoration: none; 
+}
+
+header{
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: #b5147717;
     display: flex;
     justify-content: center;
-    align-items: last baseline;
+    align-items: center;
 }
 
 .pageNameHolder h1{
     font-size: 2rem;
     color: rgb(51, 50, 50);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .photoHolder{
-    /* border: 1px solid black; */
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    display: flex;
-    margin-top: 2rem;
-    justify-content: center;
-  
-  
-}
-
-
-
-
-.bottom1{
-    /* border: 1px solid black; */
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 2;
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
 
-    
-    
-    
+.myPhoto{
+    min-width: 300px;
+    min-height: 375px;
+} 
+
+.bottom{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    height: auto;
+    display: flex;
+   flex-direction: column;
+   justify-self: center;
+   align-content: center;
+
 }
 
 .aboutTxt{
+    width: 85%;
     line-height: 1.5;
     font-size: 1.2rem;
     font-weight: 500;
     text-align: justify;
-    width: 60%;
     border-bottom: 2px solid #1456B5;
     border-top: 2px solid #21B514;
     border-left: 2px solid #602B4c;
     border-right: 2px solid #B57E14;
     padding: 1rem;
     background-color: #b5147717;
-
-
    
 }
 
-/* @media only screen and (max-width: 1100px){
-    .bottom1{
-        padding: 28%;
+.aboutTxt ul {
+    padding-left: 2rem;
+    font-weight:bolder;
+    line-height: 2;
+}
+
+.txtFormat{
+    margin: 0;
+    padding: 0;
+}
+
+.backBtnBottom{
+    display: none;
+}
+
+/* @media only screen and (max-width: 1650px){
+    .aboutTxt{
+        width: 80%;
     }
 } */
 
+@media only screen and (max-width: 750px){
+    .body{
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr;
+    }
+
+    .backBtnTop{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .backBtn a {
+        padding-left: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgb(51, 50, 50);
+        text-decoration: none; 
+
+    }
+
+    header{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        background-color: #b5147717;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photoHolder{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding: 1rem;
+    }
+
+    .backBtnBottom{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .pageNameHolder h1{
+        font-size: 1.5rem;
+    }
+}
