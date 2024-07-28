@@ -153,6 +153,10 @@ header{
         justify-content: center;
     }
 
+    .pageNameHolder h1{
+        font-size: 1.5rem;
+    }
+
     .bottom{
         grid-row-start: 4;
         grid-row-end: 5;
