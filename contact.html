@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Google Font Called 'Forum' -->
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet" />
-     <!-- CSS stylesheet Link -->
-     <link href="resources/css/contact.css" rel="stylesheet" />
-     <script src="resources/js/script.js" defer></script>
+    <!-- Google Font Called 'Forum' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet" />
+    <!-- CSS stylesheet Link -->
+    <link href="resources/css/contact.css" rel="stylesheet" />
+    <script src="resources/js/script.js" defer></script>
     <title>Contact us</title>
 </head>
+
 <body>
     <div class="container">
         <div class="backBtn"><a href="index.html">&#8678; Back</a></div>
-        <header><h1>Contact The Southfields Connection</h1></header>
+        <header>
+            <h1>Contact The Southfields Connection</h1>
+        </header>
         <form>
-            <label class="sendersEmailLbl" for="sendersEmail">Your Email Address:</label><br>
-            <input type="text" id="sendersEmail" name="sendersEmail"><br>
-            <label class="subjectLbl" for="subject">What would you like to talk about?</label><br>
-            <input type="text" id="subject" name="subject"><br>
-            <label class="ourEmailLbl" for="ourEmail">If you would prefer to use your own email editor our email address is:</label><br>
-            <button class="copyBtn" type="button" onclick="myFunction">Copy Our Email Address</button><br>
-            <label class="messageLbl" for="message">Your mesage:</label><br>
-            <input type="text" id="message" name="message"><br>
-            <input type="submit" id="submitBtn" value="Send Your Message">
+            <div class="sendEmailContainer">
+                <label class="sendersEmailLbl" for="sendersEmail">Your Email Address:</label><br>
+                <input type="text" id="sendersEmail" name="sendersEmail">
+            </div>
+            <div class="subjectContainer">
+                <label class="subjectLbl" for="subject">What would you like to talk about?</label><br>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="ourEmailAndCopyContainer">
+                <label class="ourEmailLbl" for="ourEmail">If you would prefer to use your own email editor our email
+                    address is:</label><br>
+                <button class="copyBtn" type="button" onclick="myFunction">Copy Our Email Address</button>
+            </div>
+            <div class="messageContainer">
+                <label class="messageLbl" for="message">Your mesage:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            </div>
+            <div class="submitContainer">
+                <input type="submit" id="submitBtn" value="Send Your Message">
+            </div>
         </form>
 
     </div>
 
 </body>
+
 </html>
