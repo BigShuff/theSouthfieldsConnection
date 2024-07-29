@@ -4,15 +4,15 @@ body {
     padding: 0;
     font-size: 62.5%;
     height: auto;
-    width: 100%;
+    width: 100vw;
     font-family: "Forum", serif;
 }
 
 .container {
     display: grid;
-    width: 100%;
+    width: 100vw;
     height: auto;
-    grid-template-columns: 22% 78%;
+    grid-template-columns: 1fr 3.2fr;
     grid-template-rows: 0.6fr 0.9fr 3fr 0.4fr;
 }
 
@@ -24,10 +24,6 @@ header {
     grid-column-end: 3;
     padding-left: 1rem;
     padding-top: 1rem;
-}
-
-header img {
-    min-width: 30%;
 }
 
 .nav {
@@ -170,7 +166,7 @@ header img {
 
 @media only screen and (max-width: 1150px){
     .container{
-        grid-template-columns: 22% 78%;
+        grid-template-columns: 1fr 3.2fr;
         grid-template-rows: auto auto auto auto;
         }
 
@@ -235,6 +231,13 @@ header img {
 }
 
 @media only screen and (max-width: 750px){
+    * {
+        outline: 1px solid red;
+      }
+    .body{
+        width: 100vw;
+        height: auto;
+    }
     .container{
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
@@ -246,6 +249,11 @@ header img {
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
+    }
+
+    header img{
+        width: 90vw;
+        
     }
 
     .nav{
@@ -262,6 +270,10 @@ header img {
         margin: 1rem 0;
     }
 
+    .addHolder img{
+        width: 90vw;
+    }
+
     .sideBar {
         /* border: 1px solid red; */
         grid-row-start: 3;
@@ -270,7 +282,12 @@ header img {
         grid-column-end: 2;
         display: flex;
         flex-direction: column;
-        padding-left: 5rem;
+        /* padding-left: 2rem; */
+        width: 90vw;
+    }
+
+    .sideBar a{
+        width: 90vw;
     }
 
     .paddlesContainer {
@@ -286,10 +303,12 @@ header img {
         margin-bottom: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        width: 90vw;
+        
     }
 
     .paddles{
-        width: auto;
+        width: 90vw;
     }
 
     .accessHolder {
@@ -313,3 +332,4 @@ header img {
         margin-bottom: 1rem;
     }
 }
+
