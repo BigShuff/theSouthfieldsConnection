@@ -231,9 +231,9 @@ header {
 }
 
 @media only screen and (max-width: 750px){
-    * {
+    /* * {
         outline: 1px solid red;
-      }
+      } */
     .body{
         width: 100vw;
         height: auto;

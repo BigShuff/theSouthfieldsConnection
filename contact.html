@@ -18,31 +18,46 @@
     <div class="container">
         <div class="backBtn"><a href="index.html">&#8678; Back</a></div>
         <header>
-            <h1>Contact The Southfields Connection</h1>
+           <div class="titleHolder"><h1>Get In Touch</h1></div> 
         </header>
+        <div class="spotHolder"><img src="resources/images/lineOfSpots.svg" alt="spots image which formats every page of the site"/></div>
+        <div class="formContainer">
         <form>
-            <div class="sendEmailContainer">
-                <label class="sendersEmailLbl" for="sendersEmail">Your Email Address:</label><br>
-                <input type="text" id="sendersEmail" name="sendersEmail">
+            <div class="holder holder1">
+                <label class="sendersEmailLbl" for="sendersEmail">Your Email Address:</label>
             </div>
-            <div class="subjectContainer">
-                <label class="subjectLbl" for="subject">What would you like to talk about?</label><br>
-                <input type="text" id="subject" name="subject">
+            <div class="holder holder2">
+                <input type="email" name="sendersEmail" id="sendersEmail" pattern=".+@example\.com" size="30" required />
             </div>
-            <div class="ourEmailAndCopyContainer">
-                <label class="ourEmailLbl" for="ourEmail">If you would prefer to use your own email editor our email
-                    address is:</label><br>
-                <button class="copyBtn" type="button" onclick="myFunction">Copy Our Email Address</button>
+            <div class="holder holder3">
+                <label class="subjectLbl" for="subject">What would you like to talk about?</label>
             </div>
-            <div class="messageContainer">
-                <label class="messageLbl" for="message">Your mesage:</label><br>
+            <div class="holder holder4">
+                <input type="text" id="subject" name="subject" size="30">
+            </div>
+            <div class="holder holder5">
+                <label class="messageLbl" for="message">Write your message in the box:</label>
+            </div>
+            <div class="holder holder6">
                 <textarea id="message" name="message" rows="5" cols="40"></textarea>
             </div>
-            <div class="submitContainer">
+            <div class="holder holder7"></div>
+            <div class="holder holder8">
                 <input type="submit" id="submitBtn" value="Send Your Message">
             </div>
+            <div class="holder holder9">
+                <label class="ourEmailLbl" for="ourEmail">If you would prefer to use your own email editor our email
+                    address is:</label>
+            </div>
+            <div class="holder holder10">
+                <input type="text" id="ourEmail" name="ourEmail" value="somewhere@somewhere.com" size="25">
+            </div>
+            <div class="holder holder11">
+                <button class="copyBtn" type="button" onclick="myFunction">Copy Our Email Address</button>
+            </div>
+            <div class="holder holder12"></div>
         </form>
-
+    </div>
     </div>
 
 </body>
