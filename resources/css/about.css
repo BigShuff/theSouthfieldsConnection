@@ -162,7 +162,6 @@ header{
         grid-row-end: 5;
         grid-column-start: 1;
         grid-column-end: 1;
-        padding: 1rem;
     }
 
     .backBtnBottom{
@@ -171,6 +170,8 @@ header{
         grid-column-start: 1;
         grid-column-end: 1;
         display: block;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 

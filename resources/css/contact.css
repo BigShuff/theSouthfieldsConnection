@@ -333,6 +333,7 @@ form {
     .formContainer{
         width: 90vw;
        justify-self: center;
+       /* background-color: #b5147717; */
     }
 
     .backBtn {
@@ -358,7 +359,7 @@ form {
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 2;
-        background-color: #b5147717;
+        /* background-color: #b5147717; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -396,9 +397,10 @@ form {
     form{
         /* border: 1px solid blue; */
         display: grid;
-        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
         grid-template-columns: 1fr;
         border: 1px solid rgb(218, 218, 218);
+        
     }
 
     .holder{
@@ -500,6 +502,7 @@ form {
 
     #submitBtn{
         margin-left: 1rem;
+        margin-bottom: 1rem;
     }
 
     .holder9{
@@ -522,6 +525,7 @@ form {
 
     #ourEmail{
         margin-left: 1rem;
+        margin-bottom: 1rem;
     }
 
     .holder11{
@@ -533,6 +537,7 @@ form {
 
     .copyBtn{
         margin-left: 1rem;
+        margin-bottom: 1rem;
     }
 
     .holder12{
