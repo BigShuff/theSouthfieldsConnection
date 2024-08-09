@@ -22,40 +22,41 @@
         </header>
         <div class="spotHolder"><img src="resources/images/lineOfSpots.svg" alt="spots image which formats every page of the site"/></div>
         <div class="formContainer">
-        <form>
+        <form action="" method="POST">
             <div class="holder holder1">
                 <label class="sendersEmailLbl" for="sendersEmail">Your Email Address:</label>
             </div>
             <div class="holder holder2">
-                <input type="email" name="sendersEmail" id="sendersEmail" pattern=".+@example\.com" size="30" required />
+                <input type="email" name="sendersEmail" id="sendersEmail" size="30" required/>
             </div>
             <div class="holder holder3">
                 <label class="subjectLbl" for="subject">What would you like to talk about?</label>
             </div>
             <div class="holder holder4">
-                <input type="text" id="subject" name="subject" size="30">
+                <input type="text" id="subject" name="subject" size="30" required>
             </div>
             <div class="holder holder5">
                 <label class="messageLbl" for="message">Write your message in the box:</label>
             </div>
             <div class="holder holder6">
-                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea>
             </div>
             <div class="holder holder7"></div>
             <div class="holder holder8">
-                <input type="submit" id="submitBtn" value="Send Your Message">
+                <input class="submitBtn" type="submit" id="submitBtn" value="Send Your Message">
             </div>
             <div class="holder holder9">
                 <label class="ourEmailLbl" for="ourEmail">If you would prefer to use your own email editor our email
                     address is:</label>
             </div>
             <div class="holder holder10">
-                <input type="text" id="ourEmail" name="ourEmail" value="somewhere@somewhere.com" size="25">
+                <input type="text" id="ourEmail" name="ourEmail" value="somewhere@somewhere.com" size="30">
             </div>
             <div class="holder holder11">
                 <button class="copyBtn" type="button" onclick="myFunction">Copy Our Email Address</button>
             </div>
             <div class="holder holder12"></div>
+            <input type="hidden" name="_next" value="">
         </form>
     </div>
     </div>

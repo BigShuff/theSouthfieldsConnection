@@ -37,7 +37,7 @@ header {
 }
 
 .backBtn a {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: rgb(51, 50, 50);
     text-decoration: none;
@@ -130,6 +130,10 @@ form {
 
 #sendersEmail {
     margin-bottom: 1rem;
+    border: 1px solid #602B4c;
+    padding: 5px 5px;
+    
+    /* height: 1rem; */
 
 }
 
@@ -150,6 +154,7 @@ form {
 .subjectLbl {
     /* border: 1px solid black; */
     font-size: 1.2rem;
+    
     font-weight: 500;
     color: rgb(51, 50, 50);
     padding-left: 2.5rem;
@@ -171,6 +176,9 @@ form {
 #subject {
     /* border: 1px solid black; */
     margin-bottom: 1rem;
+    border: 1px solid #602B4c;
+   padding: 5px 5px;
+   background-color: white;
 }
 
 .holder5 {
@@ -206,7 +214,8 @@ form {
 
 #message {
     margin-bottom: 1rem;
-
+    border: 1px solid #602B4c;
+    padding: 5px 5px;
 }
 
 .holder7 {
@@ -234,6 +243,15 @@ form {
 
 #submitBtn {
     font-size: 1rem;
+    background: #1456B5;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#submitBtn:hover{
+    background: #B57E14;
 }
 
 .holder9 {
@@ -261,14 +279,9 @@ form {
     
 }
 
-/* .ourEmailHolder{
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin-right: 1rem;
-    font-size: 1rem;
-} */
+#ourEmail{
+    border: 1px solid #602B4c;
+}
 
 .holder10{
  /* border: 1px solid black; */
@@ -302,6 +315,15 @@ form {
 
 .copyBtn {
     font-size: 1rem;
+    background: #1456B5;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.copyBtn:hover{
+    background: #B57E14;
 }
 
 .holder12{
@@ -427,6 +449,7 @@ form {
       padding-left: 1rem;
       margin-top: 1rem;
       /* padding-top: 1.5rem; */
+      
 
     }
 
@@ -439,8 +462,8 @@ form {
     }
 
     #sendersEmail {
-        
-        margin-left: 1rem;
+         margin-left: 1rem;
+         
     }
 
     .holder3{
@@ -464,6 +487,7 @@ form {
 
     #subject{
         margin-left: 1rem;
+        
     }
 
     .holder5{
@@ -476,6 +500,7 @@ form {
     .messageLbl{
         padding-left: 1rem;
         margin-top: 1rem;
+        
     }
 
     .holder6{
@@ -487,6 +512,7 @@ form {
 
     #message{
         margin-left: 1rem;
+       
     }
 
     .holder7{
@@ -503,6 +529,10 @@ form {
     #submitBtn{
         margin-left: 1rem;
         margin-bottom: 1rem;
+        background: #1456B5;
+        border: none;
+        color: white;
+        padding: 0.5rem;
     }
 
     .holder9{
@@ -526,6 +556,7 @@ form {
     #ourEmail{
         margin-left: 1rem;
         margin-bottom: 1rem;
+        padding: 0.5rem;
     }
 
     .holder11{
@@ -538,6 +569,10 @@ form {
     .copyBtn{
         margin-left: 1rem;
         margin-bottom: 1rem;
+        background: #1456B5;
+        border: none;
+        color: white;
+        padding: 0.5rem;
     }
 
     .holder12{
