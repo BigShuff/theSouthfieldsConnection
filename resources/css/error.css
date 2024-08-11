@@ -1,0 +1,59 @@
+body{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Forum';
+    padding: 0;
+    margin: 0;
+}
+
+.backBtn{
+    background-color: #b5147717;
+}
+
+.backBtn a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(51, 50, 50);
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+.pageNameHolder{
+    background-color: #b5147717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageNameHolder h1{
+    font-size: 2rem;
+    color: rgb(51, 50, 50);
+    font-weight: 700;
+}
+
+.explanation{
+    background-color: #b5147717;
+    font-size: 1.5rem;
+    color: rgb(51, 50, 50);
+    font-weight: 700;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.explanationTxt p{
+    font-size: 1rem;
+    color: rgb(51, 50, 50);
+    font-weight: 600;
+    padding-left: 1rem;
+   
+}
+
+.spotHolder{
+    margin-top: 0.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
