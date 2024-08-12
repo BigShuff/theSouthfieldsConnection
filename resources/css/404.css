@@ -8,6 +8,7 @@ body{
 
 .backBtn{
     background-color: #b5147717;
+    padding-top: 1rem;
 }
 
 .backBtn a{
@@ -16,6 +17,7 @@ body{
     color: rgb(51, 50, 50);
     text-decoration: none;
     padding-left: 1rem;
+    
 }
 
 .pageNameHolder{
@@ -43,12 +45,30 @@ body{
     
 }
 
+.explanationTxt{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+   
+}
 .explanationTxt p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgb(51, 50, 50);
     font-weight: 600;
-    padding-left: 1rem;
-   
+    max-width: 550px;
+}
+
+.recommendedTxt{
+    display: flex;
+    justify-content: center;
+}
+
+.recommendedTxt ol li{
+    font-size: 1.2rem;
+    color: rgb(51, 50, 50);
+    font-weight: 600;
+    max-width: 550px;
+    padding-top: 1rem;
 }
 
 .spotHolder{
